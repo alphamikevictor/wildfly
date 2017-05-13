@@ -7,7 +7,7 @@ node {
     sh('mvn clean')
   }
   stage('Build'){
-    sh('mvn')
+    sh('mvn install')
   }
   stage('Report'){
     echo currentBuild.durationString
