@@ -8,7 +8,7 @@ node {
   }
   stage('Build'){
     sh('chmod +x mvnw')
-    sh('./mvnw')
+    sh('./mvnw install')
   }
   stage('Report'){
     echo currentBuild.durationString
